@@ -1,0 +1,489 @@
+2025-09-08 13:58:43,175 - INFO - Application initialized successfully
+2025-09-08 13:59:06,752 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Documents/actividades.xlsx
+2025-09-08 13:59:08,202 - INFO - Excel file loaded successfully. 10 rows found.
+2025-09-08 13:59:21,072 - INFO - Found 2 template files
+2025-09-08 13:59:21,073 - INFO - Starting file generation process...
+2025-09-08 13:59:21,073 - INFO - Ready to process 10 rows with 2 templates
+2025-09-08 14:20:09,533 - INFO - Configuration saved to config.json
+2025-09-08 14:20:09,540 - INFO - Application initialized successfully
+2025-09-08 14:21:20,765 - INFO - Configuration saved to config.json
+2025-09-08 14:21:20,765 - INFO - Configuration saved successfully
+2025-09-08 14:21:36,708 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 14:21:38,128 - INFO - Excel file loaded successfully. 56 rows found.
+2025-09-08 15:02:30,432 - INFO - Configuration saved to config.json
+2025-09-08 15:02:30,439 - INFO - Application initialized successfully
+2025-09-08 16:39:17,560 - INFO - Configuration saved to config.json
+2025-09-08 16:39:17,565 - INFO - Application initialized successfully
+2025-09-08 16:39:50,024 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 16:39:51,453 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 16:39:51,472 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,483 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,501 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,519 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 16:39:51,533 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,555 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,572 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 16:39:51,598 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,615 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,631 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,646 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,661 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,675 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,688 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 16:39:51,701 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,714 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,732 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 16:39:51,747 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,764 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,777 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 16:39:51,791 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,804 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 16:39:51,820 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,834 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,847 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 16:39:51,856 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 16:39:51,856 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:04:09,728 - INFO - Configuration saved to config.json
+2025-09-08 17:04:09,732 - INFO - Application initialized successfully
+2025-09-08 17:04:35,925 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:04:37,558 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:04:37,577 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,587 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,605 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,627 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:04:37,645 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,665 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,683 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:04:37,701 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,716 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,736 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,753 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,769 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,782 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,797 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:04:37,808 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,820 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,836 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:04:37,850 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,865 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,878 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:04:37,897 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,914 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:04:37,929 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,944 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,958 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:04:37,975 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:04:37,975 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:10:52,581 - INFO - Configuration saved to config.json
+2025-09-08 17:10:52,586 - INFO - Application initialized successfully
+2025-09-08 17:11:19,941 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:11:20,824 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:11:20,853 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,867 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,881 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,894 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:11:20,910 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,925 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,943 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:11:20,959 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,971 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:11:20,986 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,003 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,016 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,031 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,046 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:11:21,061 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,081 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,101 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:11:21,121 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,137 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,149 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:11:21,163 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,185 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:11:21,203 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,221 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,239 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:11:21,253 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:11:21,254 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:15:35,555 - INFO - Configuration saved to config.json
+2025-09-08 17:15:35,561 - INFO - Application initialized successfully
+2025-09-08 17:16:30,508 - INFO - Configuration saved to config.json
+2025-09-08 17:16:30,515 - INFO - Application initialized successfully
+2025-09-08 17:16:41,667 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:16:43,383 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:16:43,409 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,434 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,457 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,480 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:16:43,497 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,510 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,523 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:16:43,536 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,550 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,566 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,586 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,601 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,618 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,635 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:16:43,651 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,670 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,686 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:16:43,700 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,713 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,726 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:16:43,747 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,763 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:16:43,782 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,803 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,819 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:16:43,836 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:16:43,836 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:22:12,432 - INFO - Configuration saved to config.json
+2025-09-08 17:22:12,435 - INFO - Application initialized successfully
+2025-09-08 17:29:28,302 - INFO - Configuration saved to config.json
+2025-09-08 17:29:28,309 - INFO - Application initialized successfully
+2025-09-08 17:29:40,399 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:29:41,398 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:29:41,449 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,472 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,500 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,532 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:29:41,598 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,641 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,685 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:29:41,772 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,815 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,869 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,900 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,920 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,964 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:29:41,990 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:29:42,013 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,041 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,067 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:29:42,096 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,128 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,153 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:29:42,178 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,215 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:29:42,253 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,319 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,353 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:29:42,380 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:29:42,385 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:30:34,607 - INFO - Configuration saved to config.json
+2025-09-08 17:30:34,607 - INFO - Configuration saved successfully
+2025-09-08 17:31:28,812 - INFO - Configuration saved to config.json
+2025-09-08 17:31:28,812 - INFO - Configuration saved successfully
+2025-09-08 17:38:56,722 - INFO - Configuration saved to config.json
+2025-09-08 17:38:56,728 - INFO - Application initialized successfully
+2025-09-08 17:39:22,535 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:39:23,394 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:39:23,417 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,432 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,448 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,465 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:39:23,478 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,489 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,503 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:39:23,515 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,532 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,546 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,565 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,582 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,598 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,618 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:39:23,637 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,657 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,678 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:39:23,694 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,711 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,729 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:39:23,751 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,772 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:39:23,795 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,825 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,849 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:39:23,873 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:39:23,873 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:41:05,595 - INFO - Both template files validated successfully
+2025-09-08 17:41:05,596 - INFO - Starting file generation process...
+2025-09-08 17:41:05,601 - ERROR - Error during file generation: 'ExcelData' object has no attribute 'total_rows'
+Traceback (most recent call last):
+  File "c:\Users\pra_lcandioor\Desktop\cargos\services.py", line 301, in generate_files
+    result.message = f"Ready to process {excel_data.total_rows} rows with CARGO and AUTORIZACION templates"
+                                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ExcelData' object has no attribute 'total_rows'. Did you mean: 'total_errors'?
+
+2025-09-08 17:41:07,206 - INFO - Both template files validated successfully
+2025-09-08 17:41:07,208 - INFO - Starting file generation process...
+2025-09-08 17:41:07,209 - ERROR - Error during file generation: 'ExcelData' object has no attribute 'total_rows'
+Traceback (most recent call last):
+  File "c:\Users\pra_lcandioor\Desktop\cargos\services.py", line 301, in generate_files
+    result.message = f"Ready to process {excel_data.total_rows} rows with CARGO and AUTORIZACION templates"
+                                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ExcelData' object has no attribute 'total_rows'. Did you mean: 'total_errors'?
+
+2025-09-08 17:41:07,396 - INFO - Both template files validated successfully
+2025-09-08 17:41:07,397 - INFO - Starting file generation process...
+2025-09-08 17:41:07,397 - ERROR - Error during file generation: 'ExcelData' object has no attribute 'total_rows'
+Traceback (most recent call last):
+  File "c:\Users\pra_lcandioor\Desktop\cargos\services.py", line 301, in generate_files
+    result.message = f"Ready to process {excel_data.total_rows} rows with CARGO and AUTORIZACION templates"
+                                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ExcelData' object has no attribute 'total_rows'. Did you mean: 'total_errors'?
+
+2025-09-08 17:41:07,577 - INFO - Both template files validated successfully
+2025-09-08 17:41:07,578 - INFO - Starting file generation process...
+2025-09-08 17:41:07,579 - ERROR - Error during file generation: 'ExcelData' object has no attribute 'total_rows'
+Traceback (most recent call last):
+  File "c:\Users\pra_lcandioor\Desktop\cargos\services.py", line 301, in generate_files
+    result.message = f"Ready to process {excel_data.total_rows} rows with CARGO and AUTORIZACION templates"
+                                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ExcelData' object has no attribute 'total_rows'. Did you mean: 'total_errors'?
+
+2025-09-08 17:46:07,218 - INFO - Configuration saved to config.json
+2025-09-08 17:46:07,240 - INFO - Application initialized successfully
+2025-09-08 17:46:17,984 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:46:18,744 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:46:18,761 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,771 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,785 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,801 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:46:18,822 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,838 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,852 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:46:18,865 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,878 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,889 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,904 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,919 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,933 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,949 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:46:18,966 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:46:18,983 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,000 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:46:19,019 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,035 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,055 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:46:19,072 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,091 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:46:19,108 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,128 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,146 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:46:19,159 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:46:19,159 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:51:01,058 - INFO - Configuration saved to config.json
+2025-09-08 17:51:01,063 - INFO - Application initialized successfully
+2025-09-08 17:51:11,999 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:51:12,990 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:51:13,015 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,030 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,055 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,078 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:51:13,096 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,117 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,138 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:51:13,161 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,179 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,195 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,219 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,242 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,260 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,279 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:51:13,301 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,319 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,338 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:51:13,360 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,378 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,405 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:51:13,425 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,451 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:51:13,471 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,488 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,506 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:51:13,524 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:51:13,524 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 17:57:21,421 - INFO - Configuration saved to config.json
+2025-09-08 17:57:21,427 - INFO - Application initialized successfully
+2025-09-08 17:57:33,286 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 17:57:34,287 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 17:57:34,308 - INFO - Sheet 'DOMINICANA': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,329 - INFO - Sheet 'POLO': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,352 - INFO - Sheet 'SAN MIGUEL': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,369 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 17:57:34,387 - INFO - Sheet 'RISSO': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,407 - INFO - Sheet 'MAGDALENA': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,426 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 17:57:34,442 - INFO - Sheet 'NAVARRETE': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,465 - INFO - Sheet 'MIRAFLORES': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,484 - INFO - Sheet 'SUCRE': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,503 - INFO - Sheet 'SANI': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,517 - INFO - Sheet 'PURUCHUCO': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,534 - INFO - Sheet 'ZARATE': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,549 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 17:57:34,565 - INFO - Sheet 'GUARDIA CIVIL': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,580 - INFO - Sheet 'HACIENDA': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,601 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 17:57:34,614 - INFO - Sheet 'EJERCITO': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,628 - INFO - Sheet 'MEGAPLAZA': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,644 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 17:57:34,659 - INFO - Sheet 'TARAPOTO': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,674 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 17:57:34,689 - INFO - Sheet 'LARCOMAR': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,704 - INFO - Sheet 'JESUS MARIA': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,722 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 17:57:34,735 - INFO - Sheet 'FAUCETT': 21 people parsed from 57 total lines
+2025-09-08 17:57:34,735 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 621 people total.
+2025-09-08 18:00:27,129 - INFO - Starting file generation process...
+2025-09-08 18:00:27,130 - INFO - Ready to process 621 people with CARGO and AUTORIZACION templates
+2025-09-08 18:00:27,309 - INFO - Starting file generation process...
+2025-09-08 18:00:27,311 - INFO - Ready to process 621 people with CARGO and AUTORIZACION templates
+2025-09-08 18:00:27,477 - INFO - Starting file generation process...
+2025-09-08 18:00:27,477 - INFO - Ready to process 621 people with CARGO and AUTORIZACION templates
+2025-09-08 18:08:07,902 - INFO - Configuration saved to config.json
+2025-09-08 18:08:07,908 - INFO - Application initialized successfully
+2025-09-08 18:08:20,111 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo.xlsx
+2025-09-08 18:08:21,412 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 18:08:21,457 - INFO - Sheet 'DOMINICANA': 16 people parsed from 57 total lines
+2025-09-08 18:08:21,475 - INFO - Sheet 'POLO': 12 people parsed from 57 total lines
+2025-09-08 18:08:21,501 - INFO - Sheet 'SAN MIGUEL': 19 people parsed from 57 total lines
+2025-09-08 18:08:21,519 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 18:08:21,536 - INFO - Sheet 'RISSO': 13 people parsed from 57 total lines
+2025-09-08 18:08:21,558 - INFO - Sheet 'MAGDALENA': 3 people parsed from 57 total lines
+2025-09-08 18:08:21,579 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 18:08:21,596 - INFO - Sheet 'NAVARRETE': 14 people parsed from 57 total lines
+2025-09-08 18:08:21,611 - INFO - Sheet 'MIRAFLORES': 17 people parsed from 57 total lines
+2025-09-08 18:08:21,636 - INFO - Sheet 'SUCRE': 12 people parsed from 57 total lines
+2025-09-08 18:08:21,660 - INFO - Sheet 'SANI': 14 people parsed from 57 total lines
+2025-09-08 18:08:21,674 - INFO - Sheet 'PURUCHUCO': 4 people parsed from 57 total lines
+2025-09-08 18:08:21,696 - INFO - Sheet 'ZARATE': 7 people parsed from 57 total lines
+2025-09-08 18:08:21,723 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 18:08:21,742 - INFO - Sheet 'GUARDIA CIVIL': 10 people parsed from 57 total lines
+2025-09-08 18:08:21,761 - INFO - Sheet 'HACIENDA': 10 people parsed from 57 total lines
+2025-09-08 18:08:21,777 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 18:08:21,793 - INFO - Sheet 'EJERCITO': 8 people parsed from 57 total lines
+2025-09-08 18:08:21,817 - INFO - Sheet 'MEGAPLAZA': 10 people parsed from 57 total lines
+2025-09-08 18:08:21,839 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 18:08:21,858 - INFO - Sheet 'TARAPOTO': 18 people parsed from 57 total lines
+2025-09-08 18:08:21,881 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 18:08:21,895 - INFO - Sheet 'LARCOMAR': 5 people parsed from 57 total lines
+2025-09-08 18:08:21,910 - INFO - Sheet 'JESUS MARIA': 18 people parsed from 57 total lines
+2025-09-08 18:08:21,930 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 18:08:21,948 - INFO - Sheet 'FAUCETT': 2 people parsed from 57 total lines
+2025-09-08 18:08:21,951 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 434 people total.
+2025-09-08 18:10:23,704 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo (1).xlsx
+2025-09-08 18:10:23,817 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 18:10:23,832 - INFO - Sheet 'DOMINICANA': 16 people parsed from 57 total lines
+2025-09-08 18:10:23,846 - INFO - Sheet 'POLO': 12 people parsed from 57 total lines
+2025-09-08 18:10:23,872 - INFO - Sheet 'SAN MIGUEL': 19 people parsed from 57 total lines
+2025-09-08 18:10:23,890 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 18:10:23,905 - INFO - Sheet 'RISSO': 13 people parsed from 57 total lines
+2025-09-08 18:10:23,922 - INFO - Sheet 'MAGDALENA': 3 people parsed from 57 total lines
+2025-09-08 18:10:23,938 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 18:10:23,954 - INFO - Sheet 'NAVARRETE': 14 people parsed from 57 total lines
+2025-09-08 18:10:23,970 - INFO - Sheet 'MIRAFLORES': 17 people parsed from 57 total lines
+2025-09-08 18:10:23,988 - INFO - Sheet 'SUCRE': 12 people parsed from 57 total lines
+2025-09-08 18:10:24,009 - INFO - Sheet 'SANI': 14 people parsed from 57 total lines
+2025-09-08 18:10:24,026 - INFO - Sheet 'PURUCHUCO': 4 people parsed from 57 total lines
+2025-09-08 18:10:24,041 - INFO - Sheet 'ZARATE': 7 people parsed from 57 total lines
+2025-09-08 18:10:24,062 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 18:10:24,083 - INFO - Sheet 'GUARDIA CIVIL': 10 people parsed from 57 total lines
+2025-09-08 18:10:24,091 - INFO - Sheet 'HACIENDA': 10 people parsed from 57 total lines
+2025-09-08 18:10:24,109 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 18:10:24,121 - INFO - Sheet 'EJERCITO': 8 people parsed from 57 total lines
+2025-09-08 18:10:24,137 - INFO - Sheet 'MEGAPLAZA': 10 people parsed from 57 total lines
+2025-09-08 18:10:24,142 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 18:10:24,163 - INFO - Sheet 'TARAPOTO': 18 people parsed from 57 total lines
+2025-09-08 18:10:24,173 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 18:10:24,189 - INFO - Sheet 'LARCOMAR': 5 people parsed from 57 total lines
+2025-09-08 18:10:24,208 - INFO - Sheet 'JESUS MARIA': 18 people parsed from 57 total lines
+2025-09-08 18:10:24,216 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 18:10:24,228 - INFO - Sheet 'FAUCETT': 2 people parsed from 57 total lines
+2025-09-08 18:10:24,228 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 434 people total.
+2025-09-08 18:20:35,193 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo (1).xlsx
+2025-09-08 18:20:35,322 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 18:20:35,339 - INFO - Sheet 'DOMINICANA': 16 people parsed from 57 total lines
+2025-09-08 18:20:35,348 - INFO - Sheet 'POLO': 12 people parsed from 57 total lines
+2025-09-08 18:20:35,370 - INFO - Sheet 'SAN MIGUEL': 19 people parsed from 57 total lines
+2025-09-08 18:20:35,383 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 18:20:35,405 - INFO - Sheet 'RISSO': 13 people parsed from 57 total lines
+2025-09-08 18:20:35,415 - INFO - Sheet 'MAGDALENA': 3 people parsed from 57 total lines
+2025-09-08 18:20:35,431 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 18:20:35,449 - INFO - Sheet 'NAVARRETE': 14 people parsed from 57 total lines
+2025-09-08 18:20:35,465 - INFO - Sheet 'MIRAFLORES': 17 people parsed from 57 total lines
+2025-09-08 18:20:35,482 - INFO - Sheet 'SUCRE': 12 people parsed from 57 total lines
+2025-09-08 18:20:35,487 - INFO - Sheet 'SANI': 14 people parsed from 57 total lines
+2025-09-08 18:20:35,504 - INFO - Sheet 'PURUCHUCO': 4 people parsed from 57 total lines
+2025-09-08 18:20:35,522 - INFO - Sheet 'ZARATE': 7 people parsed from 57 total lines
+2025-09-08 18:20:35,538 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 18:20:35,554 - INFO - Sheet 'GUARDIA CIVIL': 10 people parsed from 57 total lines
+2025-09-08 18:20:35,556 - INFO - Sheet 'HACIENDA': 10 people parsed from 57 total lines
+2025-09-08 18:20:35,579 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 18:20:35,591 - INFO - Sheet 'EJERCITO': 8 people parsed from 57 total lines
+2025-09-08 18:20:35,609 - INFO - Sheet 'MEGAPLAZA': 10 people parsed from 57 total lines
+2025-09-08 18:20:35,618 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 18:20:35,632 - INFO - Sheet 'TARAPOTO': 18 people parsed from 57 total lines
+2025-09-08 18:20:35,647 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 18:20:35,655 - INFO - Sheet 'LARCOMAR': 5 people parsed from 57 total lines
+2025-09-08 18:20:35,673 - INFO - Sheet 'JESUS MARIA': 18 people parsed from 57 total lines
+2025-09-08 18:20:35,681 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 18:20:35,697 - INFO - Sheet 'FAUCETT': 2 people parsed from 57 total lines
+2025-09-08 18:20:35,697 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 434 people total.
+2025-09-08 18:22:40,775 - INFO - Configuration saved to config.json
+2025-09-08 18:22:40,781 - INFO - Application initialized successfully
+2025-09-08 18:22:58,630 - INFO - Loading Excel file: C:/Users/pra_lcandioor/Downloads/REQUERIMIENTO DE UNIFORMES nuevo (1).xlsx
+2025-09-08 18:23:00,380 - INFO - Found 26 worksheets: ['DOMINICANA', 'POLO', 'SAN MIGUEL', 'DOÑA ROSA', 'RISSO', 'MAGDALENA', 'LIMA', 'NAVARRETE', 'MIRAFLORES', 'SUCRE', 'SANI', 'PURUCHUCO', 'ZARATE', 'LOS OLIVOS', 'GUARDIA CIVIL', 'HACIENDA', 'SAN BORJA', 'EJERCITO', 'MEGAPLAZA', 'MOLINA', 'TARAPOTO', 'ICA PROVINCIA', 'LARCOMAR', 'JESUS MARIA', 'ICA FILTRADO', 'FAUCETT']
+2025-09-08 18:23:00,405 - INFO - Sheet 'DOMINICANA': 16 people parsed from 57 total lines
+2025-09-08 18:23:00,405 - INFO - Sheet 'DOMINICANA': 16 uniform data rows extracted
+2025-09-08 18:23:00,424 - INFO - Sheet 'POLO': 12 people parsed from 57 total lines
+2025-09-08 18:23:00,424 - INFO - Sheet 'POLO': 12 uniform data rows extracted
+2025-09-08 18:23:00,438 - INFO - Sheet 'SAN MIGUEL': 19 people parsed from 57 total lines
+2025-09-08 18:23:00,438 - INFO - Sheet 'SAN MIGUEL': 19 uniform data rows extracted
+2025-09-08 18:23:00,452 - INFO - Sheet 'DOÑA ROSA': 23 people parsed from 57 total lines
+2025-09-08 18:23:00,452 - INFO - Sheet 'DOÑA ROSA': 23 uniform data rows extracted
+2025-09-08 18:23:00,463 - INFO - Sheet 'RISSO': 13 people parsed from 57 total lines
+2025-09-08 18:23:00,463 - INFO - Sheet 'RISSO': 13 uniform data rows extracted
+2025-09-08 18:23:00,473 - INFO - Sheet 'MAGDALENA': 3 people parsed from 57 total lines
+2025-09-08 18:23:00,475 - INFO - Sheet 'MAGDALENA': 3 uniform data rows extracted
+2025-09-08 18:23:00,486 - INFO - Sheet 'LIMA': 23 people parsed from 57 total lines
+2025-09-08 18:23:00,486 - INFO - Sheet 'LIMA': 23 uniform data rows extracted
+2025-09-08 18:23:00,499 - INFO - Sheet 'NAVARRETE': 14 people parsed from 57 total lines
+2025-09-08 18:23:00,499 - INFO - Sheet 'NAVARRETE': 14 uniform data rows extracted
+2025-09-08 18:23:00,513 - INFO - Sheet 'MIRAFLORES': 17 people parsed from 57 total lines
+2025-09-08 18:23:00,515 - INFO - Sheet 'MIRAFLORES': 17 uniform data rows extracted
+2025-09-08 18:23:00,521 - INFO - Sheet 'SUCRE': 12 people parsed from 57 total lines
+2025-09-08 18:23:00,521 - INFO - Sheet 'SUCRE': 12 uniform data rows extracted
+2025-09-08 18:23:00,531 - INFO - Sheet 'SANI': 14 people parsed from 57 total lines
+2025-09-08 18:23:00,531 - INFO - Sheet 'SANI': 14 uniform data rows extracted
+2025-09-08 18:23:00,544 - INFO - Sheet 'PURUCHUCO': 4 people parsed from 57 total lines
+2025-09-08 18:23:00,546 - INFO - Sheet 'PURUCHUCO': 4 uniform data rows extracted
+2025-09-08 18:23:00,554 - INFO - Sheet 'ZARATE': 7 people parsed from 57 total lines
+2025-09-08 18:23:00,554 - INFO - Sheet 'ZARATE': 7 uniform data rows extracted
+2025-09-08 18:23:00,564 - INFO - Sheet 'LOS OLIVOS': 23 people parsed from 57 total lines
+2025-09-08 18:23:00,564 - INFO - Sheet 'LOS OLIVOS': 23 uniform data rows extracted
+2025-09-08 18:23:00,577 - INFO - Sheet 'GUARDIA CIVIL': 10 people parsed from 57 total lines
+2025-09-08 18:23:00,577 - INFO - Sheet 'GUARDIA CIVIL': 10 uniform data rows extracted
+2025-09-08 18:23:00,588 - INFO - Sheet 'HACIENDA': 10 people parsed from 57 total lines
+2025-09-08 18:23:00,588 - INFO - Sheet 'HACIENDA': 10 uniform data rows extracted
+2025-09-08 18:23:00,598 - INFO - Sheet 'SAN BORJA': 43 people parsed from 57 total lines
+2025-09-08 18:23:00,598 - INFO - Sheet 'SAN BORJA': 43 uniform data rows extracted
+2025-09-08 18:23:00,603 - INFO - Sheet 'EJERCITO': 8 people parsed from 57 total lines
+2025-09-08 18:23:00,609 - INFO - Sheet 'EJERCITO': 8 uniform data rows extracted
+2025-09-08 18:23:00,617 - INFO - Sheet 'MEGAPLAZA': 10 people parsed from 57 total lines
+2025-09-08 18:23:00,617 - INFO - Sheet 'MEGAPLAZA': 10 uniform data rows extracted
+2025-09-08 18:23:00,625 - INFO - Sheet 'MOLINA': 22 people parsed from 57 total lines
+2025-09-08 18:23:00,632 - INFO - Sheet 'MOLINA': 22 uniform data rows extracted
+2025-09-08 18:23:00,642 - INFO - Sheet 'TARAPOTO': 18 people parsed from 57 total lines
+2025-09-08 18:23:00,642 - INFO - Sheet 'TARAPOTO': 18 uniform data rows extracted
+2025-09-08 18:23:00,652 - INFO - Sheet 'ICA PROVINCIA': 44 people parsed from 57 total lines
+2025-09-08 18:23:00,652 - INFO - Sheet 'ICA PROVINCIA': 44 uniform data rows extracted
+2025-09-08 18:23:00,665 - INFO - Sheet 'LARCOMAR': 5 people parsed from 57 total lines
+2025-09-08 18:23:00,665 - INFO - Sheet 'LARCOMAR': 5 uniform data rows extracted
+2025-09-08 18:23:00,675 - INFO - Sheet 'JESUS MARIA': 18 people parsed from 57 total lines
+2025-09-08 18:23:00,675 - INFO - Sheet 'JESUS MARIA': 18 uniform data rows extracted
+2025-09-08 18:23:00,699 - INFO - Sheet 'ICA FILTRADO': 44 people parsed from 57 total lines
+2025-09-08 18:23:00,700 - INFO - Sheet 'ICA FILTRADO': 44 uniform data rows extracted
+2025-09-08 18:23:00,718 - INFO - Sheet 'FAUCETT': 2 people parsed from 57 total lines
+2025-09-08 18:23:00,719 - INFO - Sheet 'FAUCETT': 2 uniform data rows extracted
+2025-09-08 18:23:00,719 - INFO - Excel file loaded successfully. 26/26 worksheets parsed, 434 people total.

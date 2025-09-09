@@ -42,23 +42,35 @@ A simple GUI application that generates PDF files from Excel data using Word tem
 
 ### Cargos Tab
 1. **Select Excel File**: Browse and load your Excel file containing the data
-2. **Set Templates Path**: Point to the folder containing Word document templates
-3. **Set Destination Path**: Choose where generated files will be saved
-4. **Load Excel**: Preview the Excel data in the application
-5. **Generate Files**: Process the data and create PDF files (logic TBD)
+2. **Set CARGO Template**: Select the CARGO UNIFORMES Word document template
+3. **Set AUTORIZACION Template**: Select the AUTORIZACION DESCUENTO Word document template
+4. **Set Destination Folder**: Choose where generated files will be saved (creates subfolders automatically)
+5. **Load Excel**: Preview and validate the Excel data in the application
+6. **Generate Files**: Process the data and create PDF files (logic TBD)
+
+### Key Features
+- **Persistent Configuration**: Template paths and settings are automatically saved
+- **Excel Validation**: Comprehensive validation with detailed error reporting
+- **UI-Only Interaction**: All errors and messages are shown in the GUI (no terminal windows)
+- **Automatic Folder Creation**: Destination folder and subfolders are created automatically
 
 ### File Structure
 ```
 cargos/
-├── main.py              # Main application file
-├── requirements.txt     # Python dependencies
-├── build.bat           # Build script for executable
-├── templates/          # Word document templates
+├── main.py                    # Application controller and entry point
+├── models.py                  # Data models and configuration
+├── services.py                # Business logic services
+├── ui_components.py           # UI components and widgets
+├── config_manager.py          # Configuration persistence
+├── requirements.txt           # Python dependencies
+├── build.bat                 # Build script for executable
+├── config.json               # Persistent configuration (auto-generated)
+├── templates/                # Word document templates
 │   ├── CARGO UNIFORMES.docx
 │   └── 50% - AUTORIZACIÓN DESCUENTO DE UNIFORMES (02).docx
-├── sources/            # Sample Excel files
+├── sources/                  # Sample Excel files
 │   └── REQUERIMIENTO DE UNIFORMES nuevo.xlsx
-└── output/            # Generated files destination
+└── output/                   # Generated files destination
 ```
 
 ## Architecture

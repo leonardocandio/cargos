@@ -10,7 +10,7 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from models import ExcelData, AppConfig
+from models import ExcelData, AppConfig, ExcelValidationResult
 from services import ExcelService, FileGenerationService, ConfigService
 from ui_components import CargosTab
 
@@ -31,8 +31,10 @@ class FileGeneratorApp:
             root: The main tkinter window
         """
         self.root = root
-        self.root.title("File Generator - Excel to PDF")
-        self.root.geometry("800x600")
+        self.root.title("Uniformes")
+        
+        from constants import DEFAULT_WINDOW_SIZE
+        self.root.geometry(DEFAULT_WINDOW_SIZE)
         
         # Initialize services
         self.config_service = ConfigService()
@@ -85,6 +87,9 @@ class FileGeneratorApp:
         
         # Setup callbacks
         self._setup_callbacks()
+        
+        # Save initial configuration
+        self.config_service.save_config()
     
     def _setup_stock_tab(self):
         """Setup the Stock tab interface (placeholder)."""
@@ -98,12 +103,15 @@ class FileGeneratorApp:
         """Setup callbacks between UI and business logic."""
         self.cargos_tab.on_load_excel = self._handle_load_excel
         self.cargos_tab.on_generate_files = self._handle_generate_files
+        self.cargos_tab.on_config_changed = self._handle_config_changed
     
     def _create_default_directories(self):
         """Create default directories if they don't exist."""
         try:
-            Path(self.config.templates_path).mkdir(exist_ok=True)
             Path(self.config.destination_path).mkdir(exist_ok=True)
+            # Create templates directory for default template paths
+            from constants import DEFAULT_TEMPLATES_DIR
+            Path(DEFAULT_TEMPLATES_DIR).mkdir(exist_ok=True)
             self.cargos_tab.log_message("Default directories created/verified")
         except Exception as e:
             error_msg = f"Error creating directories: {str(e)}"
@@ -117,24 +125,63 @@ class FileGeneratorApp:
                 self.cargos_tab.show_error("Error", "Please select an Excel file first")
                 return
             
+            self.cargos_tab.log_message("Loading Excel file...")
+            
             # Load Excel data using service
             self.excel_data = self.excel_service.load_excel_file(self.config.excel_file_path)
             
-            # Update UI with loaded data
-            self.cargos_tab.update_data_preview(self.excel_data)
+            # Validate Excel data
+            validation_result = self.excel_service.validate_excel_data(self.excel_data)
             
-            success_msg = f"Excel file loaded successfully. {self.excel_data.total_rows} rows found."
-            self.cargos_tab.log_message(success_msg)
-            
-            if self.excel_data.total_rows > self.config.preview_rows_limit:
+            # Display validation results
+            if validation_result.is_valid:
+                # Update UI with loaded data
+                self.cargos_tab.update_data_preview(self.excel_data)
+                self.cargos_tab.log_message(validation_result.message)
+                
+                # Log detailed worksheet information
+                for worksheet in self.excel_data.worksheets:
+                    if worksheet.data is not None:
+                        self.cargos_tab.log_message(
+                            f"✓ Sheet '{worksheet.metadata.sheet_name}': {worksheet.people_parsed} people, "
+                            f"Tienda: {worksheet.metadata.tienda}, "
+                            f"Admin: {worksheet.metadata.administrador}"
+                        )
+                    else:
+                        self.cargos_tab.log_message(
+                            f"✗ Sheet '{worksheet.metadata.sheet_name}': Failed to parse", "ERROR"
+                        )
+                
+                # Show warnings if any
+                for warning in validation_result.warnings:
+                    self.cargos_tab.log_message(warning, "WARNING")
+                
+                # Show parsing summary
                 self.cargos_tab.log_message(
-                    f"Note: Only first {self.config.preview_rows_limit} rows are shown in preview"
+                    f"Parsing complete: {self.excel_data.total_people_parsed} total people across {self.excel_data.successful_worksheets} worksheets"
                 )
+            else:
+                # Show validation errors
+                self.cargos_tab.log_message(validation_result.message, "ERROR")
+                for error in validation_result.errors:
+                    self.cargos_tab.log_message(f"  • {error}", "ERROR")
+                
+                # Show warnings if any
+                for warning in validation_result.warnings:
+                    self.cargos_tab.log_message(f"  • {warning}", "WARNING")
+                
+                # Show error dialog with summary
+                error_summary = f"{validation_result.message}\n\nErrors:\n" + "\n".join([f"• {error}" for error in validation_result.errors])
+                if validation_result.warnings:
+                    error_summary += f"\n\nWarnings:\n" + "\n".join([f"• {warning}" for warning in validation_result.warnings])
+                
+                self.cargos_tab.show_error("Excel Validation Failed", error_summary)
                 
         except Exception as e:
-            error_msg = str(e)
+            error_msg = f"Failed to load Excel file: {str(e)}"
             self.cargos_tab.log_message(error_msg, "ERROR")
             self.cargos_tab.show_error("Error", error_msg)
+            self.logger.exception("Excel loading error")
     
     def _handle_generate_files(self):
         """Handle file generation process."""
@@ -169,6 +216,17 @@ class FileGeneratorApp:
             self.cargos_tab.log_message(error_msg, "ERROR")
             self.cargos_tab.show_error("Error", error_msg)
             self.logger.exception("Unexpected error in file generation")
+    
+    def _handle_config_changed(self):
+        """Handle configuration changes and save to file."""
+        try:
+            success = self.config_service.save_config()
+            if success:
+                self.logger.info("Configuration saved successfully")
+            else:
+                self.logger.warning("Failed to save configuration")
+        except Exception as e:
+            self.logger.error(f"Error saving configuration: {str(e)}")
 
 def main():
     root = tk.Tk()
