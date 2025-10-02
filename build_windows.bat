@@ -8,10 +8,9 @@ pip install pyinstaller
 REM Clean previous builds
 if exist dist rmdir /s /q dist
 if exist build rmdir /s /q build
-if exist *.spec del *.spec
 
 REM Build executable using spec file
-pyinstaller CargosApp.spec
+pyinstaller --clean CargosApp.spec
 
 REM Create distribution package
 mkdir dist_windows

@@ -11,6 +11,15 @@ a = Analysis(
         ('config.json', '.'),
     ],
     hiddenimports=[
+        # Local modules
+        'models',
+        'services',
+        'ui_components',
+        'config_manager',
+        'unified_config_service',
+        'validators',
+        'constants',
+        # External dependencies
         'pandas',
         'openpyxl',
         'docxtpl',
