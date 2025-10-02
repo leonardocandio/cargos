@@ -15,22 +15,76 @@ class ConfigManager:
         self.config_file = Path(config_file)
         self.logger = logging.getLogger(__name__)
     
-    def save_config(self, config: AppConfig) -> bool:
+    def save_config(self, config: AppConfig, unified_config=None) -> bool:
         """
-        Save configuration to file.
+        Save configuration to consolidated config.json file.
         
         Args:
             config: AppConfig object to save
+            unified_config: UnifiedConfig object to save (optional)
             
         Returns:
             True if successful, False otherwise
         """
         try:
-            config_dict = {
-                "destination_path": config.destination_path,
-                "cargo_template_path": config.cargo_template_path,
-                "autorizacion_template_path": config.autorizacion_template_path,
+            # Load existing config to preserve unified_config if not provided
+            existing_config = {}
+            if self.config_file.exists():
+                with open(self.config_file, 'r', encoding='utf-8') as f:
+                    existing_config = json.load(f)
+            
+            # Prepare app settings
+            app_settings = {
+                "destination_path": str(Path(config.destination_path)),
+                "cargo_template_path": str(Path(config.cargo_template_path)),
+                "autorizacion_template_path": str(Path(config.autorizacion_template_path)),
                 "preview_rows_limit": config.preview_rows_limit
+            }
+            
+            # Prepare unified config (use provided or existing)
+            if unified_config:
+                unified_data = {
+                    "occupations": [
+                        {
+                            "name": occ.name,
+                            "display_name": occ.display_name,
+                            "synonyms": occ.synonyms,
+                            "prendas": [
+                                {
+                                    "prenda_type": prenda.prenda_type,
+                                    "display_name": prenda.display_name,
+                                    "has_sizes": prenda.has_sizes,
+                                    "price_sml_other": prenda.price_sml_other,
+                                    "price_xl_other": prenda.price_xl_other,
+                                    "price_xxl_other": prenda.price_xxl_other,
+                                    "price_sml_san_isidro": prenda.price_sml_san_isidro,
+                                    "price_xl_san_isidro": prenda.price_xl_san_isidro,
+                                    "price_xxl_san_isidro": prenda.price_xxl_san_isidro,
+                                    "price_sml_tarapoto": prenda.price_sml_tarapoto,
+                                    "price_xl_tarapoto": prenda.price_xl_tarapoto,
+                                    "price_xxl_tarapoto": prenda.price_xxl_tarapoto,
+                                }
+                                for prenda in occ.prendas
+                            ],
+                            "is_active": occ.is_active
+                        }
+                        for occ in unified_config.occupations
+                    ],
+                    "default_occupation": unified_config.default_occupation,
+                    "default_local_group": unified_config.default_local_group
+                }
+            else:
+                # Use existing unified config if available
+                unified_data = {
+                    "occupations": existing_config.get("occupations", []),
+                    "default_occupation": existing_config.get("default_occupation", "MOZO"),
+                    "default_local_group": existing_config.get("default_local_group", "OTHER")
+                }
+            
+            # Combine app settings and unified config
+            config_dict = {
+                "app_settings": app_settings,
+                **unified_data
             }
             
             with open(self.config_file, 'w', encoding='utf-8') as f:
@@ -58,11 +112,23 @@ class ConfigManager:
             with open(self.config_file, 'r', encoding='utf-8') as f:
                 config_dict = json.load(f)
             
+            # Load from consolidated config format
+            app_settings = config_dict.get("app_settings", {})
+            dest_path = app_settings.get("destination_path", f"{DEFAULT_OUTPUT_DIR}/")
+            cargo_path = app_settings.get("cargo_template_path", f"{DEFAULT_TEMPLATES_DIR}/CARGO UNIFORMES.docx")
+            autorizacion_path = app_settings.get("autorizacion_template_path", f"{DEFAULT_TEMPLATES_DIR}/50% - AUTORIZACIÓN DESCUENTO DE UNIFORMES (02).docx")
+            preview_limit = app_settings.get("preview_rows_limit", DEFAULT_PREVIEW_ROWS)
+            
+            # Normalize paths for cross-platform compatibility
+            if dest_path:
+                # Convert Windows-style backslashes to forward slashes, then use pathlib
+                dest_path = str(Path(dest_path.replace("\\", "/")))
+            
             config = AppConfig(
-                destination_path=config_dict.get("destination_path", f"{DEFAULT_OUTPUT_DIR}/"),
-                cargo_template_path=config_dict.get("cargo_template_path", f"{DEFAULT_TEMPLATES_DIR}/CARGO UNIFORMES.docx"),
-                autorizacion_template_path=config_dict.get("autorizacion_template_path", f"{DEFAULT_TEMPLATES_DIR}/50% - AUTORIZACIÓN DESCUENTO DE UNIFORMES (02).docx"),
-                preview_rows_limit=config_dict.get("preview_rows_limit", DEFAULT_PREVIEW_ROWS)
+                destination_path=dest_path,
+                cargo_template_path=str(Path(cargo_path)),
+                autorizacion_template_path=str(Path(autorizacion_path)),
+                preview_rows_limit=preview_limit
             )
             
             self.logger.info(f"Configuration loaded from {self.config_file}")

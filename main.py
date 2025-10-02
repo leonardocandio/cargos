@@ -10,9 +10,11 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from models import ExcelData, AppConfig, ExcelValidationResult
-from services import ExcelService, FileGenerationService, ConfigService
-from ui_components import CargosTab
+from models import ExcelData
+from services import ExcelService, FileGenerationService
+from config_manager import ConfigManager
+from ui_components import CargosTab, ConfigurationTab
+from unified_config_service import UnifiedConfigService
 
 
 class FileGeneratorApp:
@@ -37,15 +39,16 @@ class FileGeneratorApp:
         self.root.geometry(DEFAULT_WINDOW_SIZE)
         
         # Initialize services
-        self.config_service = ConfigService()
-        self.config = self.config_service.get_config()
+        self.config_manager = ConfigManager()
+        self.config = self.config_manager.load_config()
         
         # Setup logging
         self.logger = self._setup_logging()
         
         # Initialize services with logger
         self.excel_service = ExcelService(self.logger)
-        self.file_generation_service = FileGenerationService(self.logger)
+        self.unified_config_service = UnifiedConfigService(self.logger)
+        self.file_generation_service = FileGenerationService(self.logger, self.unified_config_service)
         
         # Data storage
         self.excel_data: Optional[ExcelData] = None
@@ -80,6 +83,10 @@ class FileGeneratorApp:
         self.cargos_tab = CargosTab(self.notebook, self.config)
         self.notebook.add(self.cargos_tab.frame, text="Cargos")
         
+        # Create Configuration tab
+        self.config_tab = ConfigurationTab(self.notebook, self.config, self.unified_config_service)
+        self.notebook.add(self.config_tab.frame, text="Configuration")
+        
         # Create Stock tab (placeholder)
         self.stock_frame = ttk.Frame(self.notebook)
         self.notebook.add(self.stock_frame, text="Stock")
@@ -89,7 +96,7 @@ class FileGeneratorApp:
         self._setup_callbacks()
         
         # Save initial configuration
-        self.config_service.save_config()
+        self.config_manager.save_config(self.config, self.unified_config_service.unified_config)
     
     def _setup_stock_tab(self):
         """Setup the Stock tab interface (placeholder)."""
@@ -173,7 +180,7 @@ class FileGeneratorApp:
                 # Show error dialog with summary
                 error_summary = f"{validation_result.message}\n\nErrors:\n" + "\n".join([f"• {error}" for error in validation_result.errors])
                 if validation_result.warnings:
-                    error_summary += f"\n\nWarnings:\n" + "\n".join([f"• {warning}" for warning in validation_result.warnings])
+                    error_summary += "\n\nWarnings:\n" + "\n".join([f"• {warning}" for warning in validation_result.warnings])
                 
                 self.cargos_tab.show_error("Excel Validation Failed", error_summary)
                 
@@ -191,14 +198,28 @@ class FileGeneratorApp:
                 return
             
             # Validate configuration
-            config_errors = self.config_service.validate_paths()
+            from validators import TemplateValidator
+            config_errors = TemplateValidator.validate_template_files(self.config)
             if config_errors:
                 error_msg = "\n".join(config_errors)
                 self.cargos_tab.show_error("Configuration Error", error_msg)
                 return
             
+            # Build generation options from UI
+            from models import GenerationOptions
+            selected_locales = self.cargos_tab.get_selected_locales() if hasattr(self.cargos_tab, 'get_selected_locales') else []
+            combine_per_local = self.cargos_tab.get_combine_per_local() if hasattr(self.cargos_tab, 'get_combine_per_local') else False
+            template_states = self.cargos_tab.get_enabled_template_states() if hasattr(self.cargos_tab, 'get_enabled_template_states') else {"cargo_enabled": True, "autorizacion_enabled": True}
+            
+            options = GenerationOptions(
+                selected_locales=selected_locales, 
+                combine_per_local=combine_per_local,
+                cargo_enabled=template_states.get("cargo_enabled", True),
+                autorizacion_enabled=template_states.get("autorizacion_enabled", True)
+            )
+
             # Generate files using service
-            result = self.file_generation_service.generate_files(self.excel_data, self.config)
+            result = self.file_generation_service.generate_files(self.excel_data, self.config, options)
             
             if result.success:
                 self.cargos_tab.log_message(result.message)
@@ -209,7 +230,12 @@ class FileGeneratorApp:
                     )
             else:
                 self.cargos_tab.log_message(result.message, "ERROR")
-                self.cargos_tab.show_error("Generation Error", result.message)
+                # Show errors if present
+                if result.errors:
+                    err_text = result.message + "\n\n" + "\n".join(result.errors)
+                else:
+                    err_text = result.message
+                self.cargos_tab.show_error("Generation Error", err_text)
                 
         except Exception as e:
             error_msg = f"Unexpected error during file generation: {str(e)}"
@@ -220,7 +246,7 @@ class FileGeneratorApp:
     def _handle_config_changed(self):
         """Handle configuration changes and save to file."""
         try:
-            success = self.config_service.save_config()
+            success = self.config_manager.save_config(self.config, self.unified_config_service.unified_config)
             if success:
                 self.logger.info("Configuration saved successfully")
             else:
@@ -230,7 +256,7 @@ class FileGeneratorApp:
 
 def main():
     root = tk.Tk()
-    app = FileGeneratorApp(root)
+    FileGeneratorApp(root)  # Keep reference to prevent garbage collection
     root.mainloop()
 
 if __name__ == "__main__":

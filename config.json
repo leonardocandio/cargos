@@ -1,6 +1,250 @@
 {
-  "destination_path": "output/",
-  "cargo_template_path": "C:/Users/pra_lcandioor/Downloads/CARGO UNIFORMES.docx",
-  "autorizacion_template_path": "C:/Users/pra_lcandioor/Downloads/50% - AUTORIZACIÓN DESCUENTO DE UNIFORMES (02).docx",
-  "preview_rows_limit": 100
+  "app_settings": {
+    "destination_path": "/Users/leonardocandio/Desktop/cargos de nico",
+    "cargo_template_path": "/Users/leonardocandio/cargos/templates/CARGO UNIFORMES.docx",
+    "autorizacion_template_path": "/Users/leonardocandio/cargos/templates/50% - AUTORIZACIÓN DESCUENTO DE UNIFORMES (02).docx",
+    "preview_rows_limit": 100
+  },
+  "occupations": [
+    {
+      "name": "MOZO",
+      "display_name": "Mozo",
+      "synonyms": [
+        "MOZO",
+        "MESERO",
+        "MESERO",
+        "MOZO FT",
+        "MOZO F/T",
+        "MOZO P/T",
+        "MOZO PT",
+        "MOZO FULL TIME",
+        "MOZO PART TIME",
+        "MOZO FULLTIME",
+        "MOZO PARTTIME"
+      ],
+      "prendas": [
+        {
+          "prenda_type": "CAMISA",
+          "display_name": "Camisa",
+          "has_sizes": true,
+          "price_sml_other": 36.0,
+          "price_xl_other": 38.0,
+          "price_xxl_other": 40.0,
+          "price_sml_san_isidro": 43.0,
+          "price_xl_san_isidro": 46.0,
+          "price_xxl_san_isidro": 46.0,
+          "price_sml_tarapoto": 34.0,
+          "price_xl_tarapoto": 36.0,
+          "price_xxl_tarapoto": 36.0
+        },
+        {
+          "prenda_type": "MANDILON",
+          "display_name": "Mandilon",
+          "has_sizes": false,
+          "price_sml_other": 14.0,
+          "price_xl_other": 14.0,
+          "price_xxl_other": 14.0,
+          "price_sml_san_isidro": 14.0,
+          "price_xl_san_isidro": 14.0,
+          "price_xxl_san_isidro": 14.0,
+          "price_sml_tarapoto": 14.0,
+          "price_xl_tarapoto": 14.0,
+          "price_xxl_tarapoto": 14.0
+        },
+        {
+          "prenda_type": "ANDARIN",
+          "display_name": "Andarin",
+          "has_sizes": false,
+          "price_sml_other": 3.5,
+          "price_xl_other": 3.5,
+          "price_xxl_other": 3.5,
+          "price_sml_san_isidro": 3.5,
+          "price_xl_san_isidro": 3.5,
+          "price_xxl_san_isidro": 3.5,
+          "price_sml_tarapoto": 3.5,
+          "price_xl_tarapoto": 3.5,
+          "price_xxl_tarapoto": 3.5
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "name": "AZAFATA",
+      "display_name": "Azafata",
+      "synonyms": [
+        "AZAFATA",
+        "AZAFATA FT",
+        "AZAFATA F/T",
+        "AZAFATA P/T",
+        "AZAFATA PT",
+        "AZAFATA FULL TIME",
+        "AZAFATA PART TIME",
+        "AZAFATA FULLTIME",
+        "AZAFATA PARTTIME"
+      ],
+      "prendas": [
+        {
+          "prenda_type": "BLUSA",
+          "display_name": "Blusa",
+          "has_sizes": true,
+          "price_sml_other": 36.0,
+          "price_xl_other": 38.0,
+          "price_xxl_other": 40.0,
+          "price_sml_san_isidro": 43.0,
+          "price_xl_san_isidro": 46.0,
+          "price_xxl_san_isidro": 46.0,
+          "price_sml_tarapoto": 34.0,
+          "price_xl_tarapoto": 36.0,
+          "price_xxl_tarapoto": 36.0
+        },
+        {
+          "prenda_type": "MANDILON",
+          "display_name": "Mandilon",
+          "has_sizes": false,
+          "price_sml_other": 14.0,
+          "price_xl_other": 14.0,
+          "price_xxl_other": 14.0,
+          "price_sml_san_isidro": 14.0,
+          "price_xl_san_isidro": 14.0,
+          "price_xxl_san_isidro": 14.0,
+          "price_sml_tarapoto": 14.0,
+          "price_xl_tarapoto": 14.0,
+          "price_xxl_tarapoto": 14.0
+        },
+        {
+          "prenda_type": "ANDARIN",
+          "display_name": "Andarin",
+          "has_sizes": false,
+          "price_sml_other": 3.5,
+          "price_xl_other": 3.5,
+          "price_xxl_other": 3.5,
+          "price_sml_san_isidro": 3.5,
+          "price_xl_san_isidro": 3.5,
+          "price_xxl_san_isidro": 3.5,
+          "price_sml_tarapoto": 3.5,
+          "price_xl_tarapoto": 3.5,
+          "price_xxl_tarapoto": 3.5
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "name": "PACKER",
+      "display_name": "Packer",
+      "synonyms": [
+        "PACKER",
+        "PACKER FT",
+        "PACKER F/T",
+        "PACKER P/T",
+        "PACKER PT",
+        "PACKER FULL TIME",
+        "PACKER PART TIME",
+        "PACKER FULLTIME",
+        "PACKER PARTTIME"
+      ],
+      "prendas": [
+        {
+          "prenda_type": "PACKERPOLO",
+          "display_name": "Polo Packer",
+          "has_sizes": true,
+          "price_sml_other": 34.0,
+          "price_xl_other": 36.0,
+          "price_xxl_other": 38.0,
+          "price_sml_san_isidro": 27.0,
+          "price_xl_san_isidro": 30.0,
+          "price_xxl_san_isidro": 30.0,
+          "price_sml_tarapoto": 27.0,
+          "price_xl_tarapoto": 30.0,
+          "price_xxl_tarapoto": 30.0
+        },
+        {
+          "prenda_type": "PACKERGORRA",
+          "display_name": "Gorra Packer",
+          "has_sizes": false,
+          "price_sml_other": 10.0,
+          "price_xl_other": 10.0,
+          "price_xxl_other": 10.0,
+          "price_sml_san_isidro": 10.0,
+          "price_xl_san_isidro": 10.0,
+          "price_xxl_san_isidro": 10.0,
+          "price_sml_tarapoto": 10.0,
+          "price_xl_tarapoto": 10.0,
+          "price_xxl_tarapoto": 10.0
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "name": "MOTORIZADO",
+      "display_name": "Motorizado",
+      "synonyms": [
+        "MOTORIZADO",
+        "MOTORIZADO(A)",
+        "MOTORIZADO FT",
+        "MOTORIZADO F/T",
+        "MOTORIZADO P/T",
+        "MOTORIZADO PT",
+        "MOTORIZADO FULL TIME",
+        "MOTORIZADO PART TIME",
+        "MOTORIZADO FULLTIME",
+        "MOTORIZADO PARTTIME",
+        "DELIVERY",
+        "DELIVERY FT",
+        "DELIVERY F/T",
+        "DELIVERY P/T",
+        "DELIVERY PT",
+        "DELIVERY FULL TIME",
+        "DELIVERY PART TIME",
+        "DELIVERY FULLTIME",
+        "DELIVERY PARTTIME"
+      ],
+      "prendas": [
+        {
+          "prenda_type": "DELIVERYPOLO",
+          "display_name": "Polo Delivery",
+          "has_sizes": true,
+          "price_sml_other": 34.0,
+          "price_xl_other": 36.0,
+          "price_xxl_other": 38.0,
+          "price_sml_san_isidro": 27.0,
+          "price_xl_san_isidro": 30.0,
+          "price_xxl_san_isidro": 30.0,
+          "price_sml_tarapoto": 27.0,
+          "price_xl_tarapoto": 30.0,
+          "price_xxl_tarapoto": 30.0
+        },
+        {
+          "prenda_type": "DELIVERYGORRO",
+          "display_name": "Gorro Delivery",
+          "has_sizes": false,
+          "price_sml_other": 10.0,
+          "price_xl_other": 10.0,
+          "price_xxl_other": 10.0,
+          "price_sml_san_isidro": 10.0,
+          "price_xl_san_isidro": 10.0,
+          "price_xxl_san_isidro": 10.0,
+          "price_sml_tarapoto": 10.0,
+          "price_xl_tarapoto": 10.0,
+          "price_xxl_tarapoto": 10.0
+        },
+        {
+          "prenda_type": "DELIVERYCASACA",
+          "display_name": "Casaca Delivery",
+          "has_sizes": true,
+          "price_sml_other": 39.0,
+          "price_xl_other": 41.0,
+          "price_xxl_other": 43.0,
+          "price_sml_san_isidro": 39.0,
+          "price_xl_san_isidro": 41.0,
+          "price_xxl_san_isidro": 41.0,
+          "price_sml_tarapoto": 39.0,
+          "price_xl_tarapoto": 41.0,
+          "price_xxl_tarapoto": 41.0
+        }
+      ],
+      "is_active": true
+    }
+  ],
+  "default_occupation": "MOZO",
+  "default_local_group": "OTHER"
 }

@@ -9,13 +9,13 @@ A simple GUI application that generates PDF files from Excel data using Word tem
 - **Template Management**: Use Word document templates for file generation
 - **Configurable Paths**: Set default paths for templates and output files
 - **Logging**: Built-in logging system with error handling
-- **Standalone Executable**: Package as a single .exe file
+- **Standalone Executable**: Package as a single executable file for multiple platforms
 
 ## Setup and Installation
 
 ### Requirements
 - Python 3.7+
-- Windows OS (for .exe packaging)
+- Windows OS (for .exe packaging) or Unix-like systems (for binary packaging)
 
 ### Quick Start
 
@@ -117,4 +117,16 @@ The application can be packaged as a standalone executable using PyInstaller:
 pyinstaller --onefile --windowed --name="FileGenerator" --add-data "templates;templates" main.py
 ```
 
-This creates a single .exe file that includes all dependencies and can run on any Windows machine without Python installed.
+This creates a single executable file that includes all dependencies and can run on the target platform without Python installed.
+
+### Cross-Platform Building
+
+**Windows:**
+```bash
+build.bat
+```
+
+**Unix/Linux/macOS:**
+```bash
+./build.sh
+```

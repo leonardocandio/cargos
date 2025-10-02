@@ -31,3 +31,11 @@ class TemplateValidator:
             errors.append(f"AUTORIZACION template not found: {config.autorizacion_template_path}")
         
         return errors
+
+    @staticmethod
+    def validate_autorizacion_template(config: AppConfig) -> List[str]:
+        """Validate only the AUTORIZACION template path."""
+        errors = []
+        if not Path(config.autorizacion_template_path).exists():
+            errors.append(f"AUTORIZACION template not found: {config.autorizacion_template_path}")
+        return errors

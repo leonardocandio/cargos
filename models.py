@@ -2,7 +2,7 @@
 Data models and configuration classes for the File Generator application.
 """
 from dataclasses import dataclass
-from typing import Optional, TYPE_CHECKING
+from typing import Optional, TYPE_CHECKING, List
 from constants import DEFAULT_OUTPUT_DIR, DEFAULT_LOG_FILE, DEFAULT_PREVIEW_ROWS
 
 if TYPE_CHECKING:
@@ -116,3 +116,212 @@ class GenerationResult:
     def __post_init__(self):
         if self.errors is None:
             self.errors = []
+
+
+@dataclass
+class Prenda:
+    """Represents a garment item with its description and quantity."""
+    string: str  # Formatted string like "CAMISA TALLA M"
+    qty: int     # Quantity of this garment
+
+
+@dataclass
+class GenerationOptions:
+    """Options for controlling generation behavior and scope."""
+    selected_locales: List[str]
+    combine_per_local: bool = False  # False: per person only; True: also generate combined DOCX per local
+    cargo_enabled: bool = True  # Generate CARGO documents
+    autorizacion_enabled: bool = True  # Generate AUTORIZACION documents
+
+
+@dataclass
+class PrendaPrice:
+    """Price configuration for a specific prenda type."""
+    prenda_type: str  # e.g., "CAMISA", "BLUSA", "MANDILON"
+    size_group: str   # "SML" for S/M/L, "XL", "XXL"
+    cargo: str        # e.g., "MOZO", "AZAFATA", "PACKER"
+    local_group: str  # "TARAPOTO", "SAN_ISIDRO", "OTHER"
+    price: float      # Price per unit
+
+
+@dataclass
+class CargoSynonyms:
+    """Cargo synonyms configuration."""
+    cargo_name: str
+    synonyms: List[str]
+
+
+@dataclass
+class PricingConfig:
+    """Complete pricing configuration."""
+    prenda_prices: List[PrendaPrice]
+    cargo_synonyms: List[CargoSynonyms]
+    default_local_group: str = "OTHER"
+    
+    def get_price(self, prenda_type: str, size: str, cargo: str, local: str) -> float:
+        """Get price for a specific combination."""
+        # Normalize inputs
+        prenda_type = prenda_type.upper().strip()
+        size = size.upper().strip()
+        cargo = cargo.upper().strip()
+        local = local.upper().strip()
+        
+        # Determine size group
+        if size in ["S", "M", "L"]:
+            size_group = "SML"
+        elif size == "XL":
+            size_group = "XL"
+        elif size == "XXL":
+            size_group = "XXL"
+        else:
+            size_group = "SML"  # Default fallback
+        
+        # Determine local group
+        if local in ["TARAPOTO"]:
+            local_group = "TARAPOTO"
+        elif local in ["SAN ISIDRO", "SAN_ISIDRO"]:
+            local_group = "SAN_ISIDRO"
+        else:
+            local_group = "OTHER"
+        
+        # Find matching price
+        for price in self.prenda_prices:
+            if (price.prenda_type == prenda_type and 
+                price.size_group == size_group and 
+                price.cargo == cargo and 
+                price.local_group == local_group):
+                return price.price
+        
+        # Fallback to default price (SML, OTHER)
+        for price in self.prenda_prices:
+            if (price.prenda_type == prenda_type and 
+                price.size_group == "SML" and 
+                price.cargo == cargo and 
+                price.local_group == "OTHER"):
+                return price.price
+        
+        return 0.0  # No price found
+    
+    def get_cargo_synonyms(self, cargo: str) -> List[str]:
+        """Get synonyms for a cargo type."""
+        cargo = cargo.upper().strip()
+        for cargo_syn in self.cargo_synonyms:
+            if cargo_syn.cargo_name.upper() == cargo:
+                return cargo_syn.synonyms
+        return [cargo]  # Return original if no synonyms found
+
+
+@dataclass
+class OccupationPrenda:
+    """Represents a prenda that can be assigned to a specific occupation with pricing."""
+    prenda_type: str  # e.g., "CAMISA", "BLUSA", "MANDILON"
+    has_sizes: bool = True  # Whether this prenda has different sizes
+    is_required: bool = False  # Whether this prenda is required for the occupation
+    default_quantity: int = 0  # Default quantity if not specified
+    # Pricing for different size groups and local groups
+    price_sml_other: float = 0.0  # Price for S/M/L sizes in OTHER local
+    price_xl_other: float = 0.0   # Price for XL size in OTHER local
+    price_xxl_other: float = 0.0  # Price for XXL size in OTHER local
+    price_sml_tarapoto: float = 0.0  # Price for S/M/L sizes in TARAPOTO local
+    price_xl_tarapoto: float = 0.0   # Price for XL size in TARAPOTO local
+    price_xxl_tarapoto: float = 0.0  # Price for XXL size in TARAPOTO local
+    price_sml_san_isidro: float = 0.0  # Price for S/M/L sizes in SAN_ISIDRO local
+    price_xl_san_isidro: float = 0.0   # Price for XL size in SAN_ISIDRO local
+    price_xxl_san_isidro: float = 0.0  # Price for XXL size in SAN_ISIDRO local
+
+
+@dataclass
+class Occupation:
+    """Represents an occupation with its associated prendas and configuration."""
+    name: str  # e.g., "MOZO", "AZAFATA", "PACKER"
+    display_name: str  # e.g., "Mozo", "Azafata", "Packer"
+    synonyms: List[str]  # Alternative names for this occupation
+    prendas: List[OccupationPrenda]  # Prendas that can be assigned to this occupation
+    is_active: bool = True  # Whether this occupation is currently active
+    description: str = ""  # Optional description of the occupation
+
+
+@dataclass
+class UnifiedConfig:
+    """Unified configuration combining occupations and their pricing."""
+    occupations: List[Occupation]
+    default_occupation: str = "MOZO"
+    default_local_group: str = "OTHER"
+    
+    def _determine_local_group(self, local: str) -> str:
+        """Determine local group with sanitization for TARAPOTO and SAN ISIDRO."""
+        local_upper = local.upper().strip()
+        
+        # Check for TARAPOTO (exact match or contains "TARAPOTO")
+        if local_upper == "TARAPOTO" or "TARAPOTO" in local_upper:
+            return "tarapoto"
+        
+        # Check for SAN ISIDRO (exact match or contains "SAN ISIDRO" or "SAN_ISIDRO")
+        if (local_upper in ["SAN ISIDRO", "SAN_ISIDRO"] or 
+            "SAN ISIDRO" in local_upper or "SAN_ISIDRO" in local_upper):
+            return "san_isidro"
+        
+        # Default to other
+        return "other"
+    
+    def get_occupation(self, name: str) -> Optional[Occupation]:
+        """Get occupation by name (case-insensitive)."""
+        name_upper = name.upper().strip()
+        for occupation in self.occupations:
+            if (occupation.name.upper() == name_upper or 
+                name_upper in [syn.upper() for syn in occupation.synonyms]):
+                return occupation
+        return None
+    
+    def get_active_occupations(self) -> List[Occupation]:
+        """Get all active occupations."""
+        return [occ for occ in self.occupations if occ.is_active]
+    
+    def get_occupation_prendas(self, occupation_name: str) -> List[OccupationPrenda]:
+        """Get prendas for a specific occupation."""
+        occupation = self.get_occupation(occupation_name)
+        return occupation.prendas if occupation else []
+    
+    def is_valid_occupation(self, name: str) -> bool:
+        """Check if an occupation name is valid."""
+        return self.get_occupation(name) is not None
+    
+    def get_occupation_synonyms(self, occupation_name: str) -> List[str]:
+        """Get synonyms for an occupation."""
+        occupation = self.get_occupation(occupation_name)
+        return occupation.synonyms if occupation else [occupation_name]
+    
+    def get_price(self, prenda_type: str, size: str, cargo: str, local: str) -> float:
+        """Get price for a specific combination using unified config."""
+        # Normalize inputs
+        prenda_type = prenda_type.upper().strip()
+        size = size.upper().strip()
+        cargo = cargo.upper().strip()
+        local = local.upper().strip()
+        
+        # Find occupation
+        occupation = self.get_occupation(cargo)
+        if not occupation:
+            return 0.0
+        
+        # Find prenda in occupation
+        for prenda in occupation.prendas:
+            if prenda.prenda_type.upper() == prenda_type:
+                # Determine size group
+                if size in ["S", "M", "L", "SML"]:
+                    size_group = "sml"
+                elif size == "XL":
+                    size_group = "xl"
+                elif size == "XXL":
+                    size_group = "xxl"
+                else:
+                    size_group = "sml"  # Default fallback
+                
+                # Determine local group with sanitization
+                local_group = self._determine_local_group(local)
+                
+                # Get price based on size and local group
+                price_attr = f"price_{size_group}_{local_group}"
+                return getattr(prenda, price_attr, 0.0)
+        
+        return 0.0  # No price found
